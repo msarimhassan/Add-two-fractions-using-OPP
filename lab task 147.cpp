@@ -2,7 +2,6 @@
 #include<cstdlib>
 #include<ctime>
 using namespace std;
-
 class fraction
 {
 	public:
@@ -50,28 +49,20 @@ class mathproblem
 		fraction obj3;
 	    fraction obj4;
 		int numinator,deno;
-	//	srand(time(0));
 	int indicator;
-
 	setproblem()
 	{
 	srand (time(0));
-	
 	obj1.setnumenator(rand()%10+1);
 	obj1.setdenominator(rand()%10+1);
-	
 	obj2.setnumenator(rand()%10+1);
 	obj2.setdenominator(rand()%10+1);
-
    }
-	
 	displayproblem()
-	{
-			srand (time(0));
-		indicator=rand()%4+1;
+	{srand (time(0));
+	indicator=rand()%4+1;
 	if (indicator==1)
 	{
-	
 		obj1.show();
 		cout<<" "<<"X"<<" ";
 		obj2.show();
@@ -143,11 +134,8 @@ int main()
 	{
 		cout<<"CORRECT ANSWER";
 	}
-
-		
-	
-
-	
-}
+	system("pause");
+	return 0;
+	}
 
 
